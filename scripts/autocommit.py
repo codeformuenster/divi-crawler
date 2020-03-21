@@ -2,6 +2,9 @@
 automatic commit of daily parkleitsystem and waiting time data .csv file
 """
 import os
+import sys
+
+sys.path.append(".")
 import config as cfg
 
 GIT_URL = "https://" + cfg.token + "@github.com/codeformuenster/divi-crawler.git"
