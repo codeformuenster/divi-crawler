@@ -37,3 +37,17 @@ Web crawler for data at divi.de
     ``` bash
     python3 scripts/autocommit.py
     ```
+
+## Docker automation
+
+1. Build image:
+
+    ``` bash
+    docker build . -t divi
+    ```
+
+2. Run crawler in container:
+
+    ``` bash
+    docker run divi /bin/bash -c "python scripts/divi-icu-beds.py && python scripts/autocommit.py"
+    ```
