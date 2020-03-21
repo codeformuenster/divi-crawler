@@ -7,3 +7,4 @@ config.py
 # python
 env/
 *.egg-info
+__pycache__
