@@ -15,4 +15,5 @@ os.system(f"git pull {GIT_URL}")
 os.system("git add data/")
 os.system('git commit -m "add scraped data"')
 # push to remote
-os.system(f"git push {GIT_URL}")
+os.system(f"git remote set-url origin {GIT_URL}")
+os.system("git push origin master")
