@@ -21,25 +21,41 @@ soup = BeautifulSoup(req.content, "html.parser")
 script_tag = soup.body.script
 
 
+# Get icu report
 start_string = '{"config"'
 end_string = "]}}"
 result = re.search(start_string + "(.*)" + end_string, str(script_tag)).group(1)
 full_result = start_string + result + end_string
-
-
 icu_report = json.loads(full_result)
+
+status = icu_report["vconcat"][0]["layer"][0]["title"]["subtitle"][0]
+source = icu_report["vconcat"][0]["layer"][0]["title"]["subtitle"][1]
 states = icu_report["datasets"]["data-aa709d382b996f70e1574ebd862b7ad1"]
 
 for state in states:
     del state["geometry"]
 
+result = {}
 
-mytz = pytz.timezone("Europe/Berlin")
-dt = mytz.normalize(mytz.localize(datetime.now(), is_dst=True))
-unix_utc = calendar.timegm(dt.utctimetuple())
+meta = {}
+meta["source"] = source
+meta["status"] = status
 
-filename = "../data/icu-beds-" + str(unix_utc) + ".json"
+
+# Add timestamp
+
+utc_date = datetime.utcnow()
+unix_utc = calendar.timegm(utc_date.utctimetuple())
+iso_utc = utc_date.strftime("%Y%m%dT%H%M%SZ")
+
+meta["unix_timestmap"] = unix_utc
+meta["iso_timestamp"] = iso_utc
+
+result["meta"] = meta
+result["states"] = states
+
+filename = "../data/icu-beds-" + str(iso_utc) + ".json"
 
 
 with open(filename, "w", encoding="utf8") as outfile:
-    json.dump(states, outfile, indent=4, ensure_ascii=False)
+    json.dump(result, outfile, indent=4, ensure_ascii=False)
