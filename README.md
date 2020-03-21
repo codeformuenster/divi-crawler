@@ -14,7 +14,7 @@ Web crawler for data at divi.de
 2. Call the crawler script:
 
     ``` bash
-    divi-icu-beds.py
+    python3.7 scripts/divi-icu-beds.py
     ```
 
 ## Steps for commiting the .json file into the "data" folder on GitHub
@@ -35,5 +35,5 @@ Web crawler for data at divi.de
 4. Call the auto_commit script:
 
     ``` bash
-    autocommit.py
+    python3.7 scripts/autocommit.py
     ```
