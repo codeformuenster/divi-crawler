@@ -54,8 +54,7 @@ meta["iso_timestamp"] = iso_utc
 result["meta"] = meta
 result["states"] = states
 
-filename = "../data/icu-beds-" + str(iso_utc) + ".json"
-
+filename = "data/icu-beds-" + str(iso_utc) + ".json"
 
 with open(filename, "w", encoding="utf8") as outfile:
     json.dump(result, outfile, indent=4, ensure_ascii=False)
