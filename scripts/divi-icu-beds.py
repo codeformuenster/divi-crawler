@@ -29,7 +29,8 @@ icu_report = json.loads(full_result)
 
 status = icu_report["vconcat"][0]["layer"][0]["title"]["subtitle"][0]
 source = icu_report["vconcat"][0]["layer"][0]["title"]["subtitle"][1]
-states = icu_report["datasets"]["data-aa709d382b996f70e1574ebd862b7ad1"]
+dataset = list(icu_report["datasets"].keys())[0]
+states = icu_report["datasets"][dataset]
 
 for state in states:
     del state["geometry"]
