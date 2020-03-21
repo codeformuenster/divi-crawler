@@ -5,10 +5,10 @@ Web crawler for data at divi.de
 
 ## Howto run the crawler
 
-* Install development dependencies:
+* Install development dependencies for Python 3.7:
 
   ```bash
-  pip3 install -r requirements.txt
+  python3.7 -m pip install -r requirements.txt
   ```
 
 * Call the crawler script:
