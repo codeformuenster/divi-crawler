@@ -40,8 +40,6 @@ unix_utc = calendar.timegm(dt.utctimetuple())
 
 filename = "../data/icu-beds-" + str(unix_utc) + ".json"
 
-output = {}
-output["states"] = states
 
 with open(filename, "w") as outfile:
-    json.dump(states, outfile)
+    json.dump(states, outfile, indent=4)
