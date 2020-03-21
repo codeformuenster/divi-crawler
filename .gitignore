@@ -1,0 +1,6 @@
+# ide
+.vscode
+
+# python
+env/
+*.egg-info
