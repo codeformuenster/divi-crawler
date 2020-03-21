@@ -3,7 +3,6 @@ import json
 import re
 from datetime import datetime
 
-import pytz
 import requests
 from bs4 import BeautifulSoup
 
@@ -43,7 +42,6 @@ meta["status"] = status
 
 
 # Add timestamp
-
 utc_date = datetime.utcnow()
 unix_utc = calendar.timegm(utc_date.utctimetuple())
 iso_utc = utc_date.strftime("%Y%m%dT%H%M%SZ")

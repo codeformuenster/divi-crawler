@@ -11,7 +11,7 @@ setup(
     packages=find_packages(),
     scripts=glob("scripts/*"),
     # dependencies
-    install_requires=["bs4", "requests", "pytz"],
+    install_requires=["bs4", "requests"],
     extras_require={
         "dev": ["black", "pylama", "rope"],
     },
