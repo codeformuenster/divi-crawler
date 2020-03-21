@@ -8,13 +8,13 @@ Web crawler for data at divi.de
 1. Install development dependencies for Python 3.7:
 
     ``` bash
-    python3.7 -m pip install -r requirements.txt
+    python3 -m pip install -r requirements.txt
     ```
 
 2. Call the crawler script:
 
     ``` bash
-    python3.7 scripts/divi-icu-beds.py
+    python3 scripts/divi-icu-beds.py
     ```
 
 ## Steps for commiting the .json file into the "data" folder on GitHub
@@ -35,5 +35,5 @@ Web crawler for data at divi.de
 4. Call the auto_commit script:
 
     ``` bash
-    python3.7 scripts/autocommit.py
+    python3 scripts/autocommit.py
     ```
