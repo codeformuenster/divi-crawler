@@ -38,7 +38,7 @@ mytz = pytz.timezone("Europe/Berlin")
 dt = mytz.normalize(mytz.localize(datetime.now(), is_dst=True))
 unix_utc = calendar.timegm(dt.utctimetuple())
 
-filename = "../data/icu-beds-" + str(unix_utc) + ".json"
+filename = "data/icu-beds-" + str(unix_utc) + ".json"
 
 
 with open(filename, "w", encoding="utf8") as outfile:
