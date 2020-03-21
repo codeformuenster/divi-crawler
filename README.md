@@ -27,7 +27,7 @@ Web crawler for data at divi.de
 
 3. Generate a file "config.py"  
 
-    (like [config.dist.py](https://github.com/codeformuenster/divi-crawler/blob/master/config.example.py))
+    (like [config.py.example](https://github.com/codeformuenster/divi-crawler/blob/master/config.py.example))
     and copy your personal access token into the file.
 
     **Note: Treat your personal access token like a password and NEVER check in your config.py.**
