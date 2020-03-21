@@ -1,4 +1,11 @@
+import calendar
+import json
+import re
+from datetime import datetime
+
+import pytz
 import requests
+from bs4 import BeautifulSoup
 
 # Set headers
 headers = requests.utils.default_headers()
@@ -8,22 +15,17 @@ headers.update(
     }
 )
 
-
-from bs4 import BeautifulSoup
-
 url = "https://www.divi.de/images/register/report2v.html"
 req = requests.get(url, headers)
 soup = BeautifulSoup(req.content, "html.parser")
 script_tag = soup.body.script
 
-import re
 
 start_string = '{"config"'
 end_string = "]}}"
 result = re.search(start_string + "(.*)" + end_string, str(script_tag)).group(1)
 full_result = start_string + result + end_string
 
-import json
 
 icu_report = json.loads(full_result)
 states = icu_report["datasets"]["data-aa709d382b996f70e1574ebd862b7ad1"]
@@ -31,10 +33,6 @@ states = icu_report["datasets"]["data-aa709d382b996f70e1574ebd862b7ad1"]
 for state in states:
     del state["geometry"]
 
-
-from datetime import datetime
-import pytz
-import calendar
 
 mytz = pytz.timezone("Europe/Berlin")
 dt = mytz.normalize(mytz.localize(datetime.now(), is_dst=True))
