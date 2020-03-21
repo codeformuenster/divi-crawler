@@ -2,7 +2,7 @@
     {
         "ARDS-Netzwerk": 3,
         "Aktualisiert von": 135673,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 358,
+        "Anzahl ECMO-Fälle pro Jahr": 358,
         "COVID-19 aktuell": 13,
         "COVID-19 beatmet": 5,
         "COVID-19 kumulativ": 5,
@@ -42,7 +42,7 @@
     {
         "ARDS-Netzwerk": 9,
         "Aktualisiert von": 261768,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 194,
+        "Anzahl ECMO-Fälle pro Jahr": 194,
         "COVID-19 aktuell": 17,
         "COVID-19 beatmet": 5,
         "COVID-19 kumulativ": 3,
@@ -82,7 +82,7 @@
     {
         "ARDS-Netzwerk": 1,
         "Aktualisiert von": 24691,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 0,
+        "Anzahl ECMO-Fälle pro Jahr": 0,
         "COVID-19 aktuell": 2,
         "COVID-19 beatmet": 1,
         "COVID-19 kumulativ": 0,
@@ -122,7 +122,7 @@
     {
         "ARDS-Netzwerk": 16,
         "Aktualisiert von": 609720,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 741,
+        "Anzahl ECMO-Fälle pro Jahr": 741,
         "COVID-19 aktuell": 65,
         "COVID-19 beatmet": 31,
         "COVID-19 kumulativ": 14,
@@ -162,7 +162,7 @@
     {
         "ARDS-Netzwerk": 8,
         "Aktualisiert von": 208097,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 385,
+        "Anzahl ECMO-Fälle pro Jahr": 385,
         "COVID-19 aktuell": 7,
         "COVID-19 beatmet": 6,
         "COVID-19 kumulativ": 2,
@@ -202,7 +202,7 @@
     {
         "ARDS-Netzwerk": 2,
         "Aktualisiert von": 292493,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 40,
+        "Anzahl ECMO-Fälle pro Jahr": 40,
         "COVID-19 aktuell": 29,
         "COVID-19 beatmet": 3,
         "COVID-19 kumulativ": 0,
@@ -242,7 +242,7 @@
     {
         "ARDS-Netzwerk": 8,
         "Aktualisiert von": 349786,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 354,
+        "Anzahl ECMO-Fälle pro Jahr": 354,
         "COVID-19 aktuell": 44,
         "COVID-19 beatmet": 24,
         "COVID-19 kumulativ": 9,
@@ -267,7 +267,7 @@
         "USE": 2,
         "Verwalter": 357798,
         "ags": 362577468.0,
-        "bundesland": "Baden-W\u00fcrttemberg",
+        "bundesland": "Baden-Württemberg",
         "covid_rel": 3.974874098121393e-06,
         "icu_beds_future": 516,
         "icu_beds_now": 477,
@@ -282,7 +282,7 @@
     {
         "ARDS-Netzwerk": 11,
         "Aktualisiert von": 579838,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 718,
+        "Anzahl ECMO-Fälle pro Jahr": 718,
         "COVID-19 aktuell": 94,
         "COVID-19 beatmet": 35,
         "COVID-19 kumulativ": 11,
@@ -322,7 +322,7 @@
     {
         "ARDS-Netzwerk": 1,
         "Aktualisiert von": 58025,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 145,
+        "Anzahl ECMO-Fälle pro Jahr": 145,
         "COVID-19 aktuell": 3,
         "COVID-19 beatmet": 1,
         "COVID-19 kumulativ": 0,
@@ -362,7 +362,7 @@
     {
         "ARDS-Netzwerk": 4,
         "Aktualisiert von": 263602,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 186,
+        "Anzahl ECMO-Fälle pro Jahr": 186,
         "COVID-19 aktuell": 15,
         "COVID-19 beatmet": 11,
         "COVID-19 kumulativ": 0,
@@ -402,7 +402,7 @@
     {
         "ARDS-Netzwerk": 5,
         "Aktualisiert von": 544656,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 90,
+        "Anzahl ECMO-Fälle pro Jahr": 90,
         "COVID-19 aktuell": 6,
         "COVID-19 beatmet": 0,
         "COVID-19 kumulativ": 0,
@@ -442,7 +442,7 @@
     {
         "ARDS-Netzwerk": 2,
         "Aktualisiert von": 506992,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 104,
+        "Anzahl ECMO-Fälle pro Jahr": 104,
         "COVID-19 aktuell": 1,
         "COVID-19 beatmet": 0,
         "COVID-19 kumulativ": 0,
@@ -482,7 +482,7 @@
     {
         "ARDS-Netzwerk": 2,
         "Aktualisiert von": 351576,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 80,
+        "Anzahl ECMO-Fälle pro Jahr": 80,
         "COVID-19 aktuell": 4,
         "COVID-19 beatmet": 0,
         "COVID-19 kumulativ": 0,
@@ -522,7 +522,7 @@
     {
         "ARDS-Netzwerk": 0,
         "Aktualisiert von": 134269,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 50,
+        "Anzahl ECMO-Fälle pro Jahr": 50,
         "COVID-19 aktuell": 1,
         "COVID-19 beatmet": 0,
         "COVID-19 kumulativ": 0,
@@ -562,7 +562,7 @@
     {
         "ARDS-Netzwerk": 4,
         "Aktualisiert von": 66010,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 40,
+        "Anzahl ECMO-Fälle pro Jahr": 40,
         "COVID-19 aktuell": 0,
         "COVID-19 beatmet": 0,
         "COVID-19 kumulativ": 0,
@@ -587,7 +587,7 @@
         "USE": 2,
         "Verwalter": 74060,
         "ags": 128477067.0,
-        "bundesland": "Th\u00fcringen",
+        "bundesland": "Thüringen",
         "covid_rel": 0.0,
         "icu_beds_future": 202,
         "icu_beds_now": 152,
@@ -602,7 +602,7 @@
     {
         "ARDS-Netzwerk": 2,
         "Aktualisiert von": 349519,
-        "Anzahl ECMO-F\u00e4lle pro Jahr": 25,
+        "Anzahl ECMO-Fälle pro Jahr": 25,
         "COVID-19 aktuell": 22,
         "COVID-19 beatmet": 3,
         "COVID-19 kumulativ": 0,
