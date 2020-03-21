@@ -3,18 +3,18 @@
 Web crawler for data at divi.de
 (Deutsche interdisziplinäre Vereinigung fir Intensiv- und Notfallmedizin).
 
-## Steps for running the crawler
+## Howto run the crawler
 
-* Install dependencies, i.e. the python package BeautifulSoup:
+* Install development dependencies:
 
   ```bash
-  pip3 install bs4 requests pytz calendar
+  pip3 install -r requirements.txt
   ```
 
-* Call the read_parkleitsystem_data script:
+* Call the crawler script:
 
   ```bash
-  python3.7 todo.py
+  divi-icu-beds.py
   ```
 
 ## Steps for commiting the .csv file into the "data" folder on GitHub
