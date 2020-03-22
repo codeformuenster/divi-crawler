@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
-import mongoDBUpload
+from divi import mongodb_upload
 
 # Set headers
 headers = requests.utils.default_headers()
@@ -52,8 +52,9 @@ iso_utc = utc_date.strftime("%Y%m%dT%H%M%SZ")
 meta["unix_timestmap"] = unix_utc
 meta["iso_timestamp"] = iso_utc
 
+# upload to mongodb
 try:
-    mongoDBUpload.insertData(states, meta)
+    mongodb_upload.insertData(states, meta)
 except:
     pass
 
