@@ -1,3 +1,5 @@
+import copy
+
 import pymongo
 
 USER_NAME = "root"
@@ -19,6 +21,10 @@ def _insertMeta(meta):
 
 
 def insertData(dataList, meta):
+    # make deep copy, in order to avoid mutation of original data
+    dataList = copy.deepcopy(dataList)
+    meta = copy.deepcopy(meta)
+    # upload to database
     meta = _insertMeta(meta)
     for data in dataList:
         data["meta_info"] = meta
