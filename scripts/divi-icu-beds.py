@@ -6,6 +6,8 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
+from divi import mongodb_upload
+
 # Set headers
 headers = requests.utils.default_headers()
 headers.update(
@@ -50,10 +52,15 @@ iso_utc = utc_date.strftime("%Y%m%dT%H%M%SZ")
 meta["unix_timestmap"] = unix_utc
 meta["iso_timestamp"] = iso_utc
 
+# upload to mongodb
+try:
+    mongodb_upload.insertData(states, meta)
+except:
+    pass
+
+# save result to JSON
 result["meta"] = meta
 result["states"] = states
-
 filename = "data/icu-beds-" + str(iso_utc) + ".json"
-
 with open(filename, "w", encoding="utf8") as outfile:
     json.dump(result, outfile, indent=4, ensure_ascii=False)

@@ -9,9 +9,9 @@ setup(
     license="MIT",
     # source
     packages=find_packages(),
-    scripts=glob("scripts/*"),
+    scripts=glob("scripts/*.py"),
     # dependencies
-    install_requires=["bs4", "requests"],
+    install_requires=["bs4", "requests", "pymongo"],
     extras_require={
         "dev": ["black", "pylama", "rope"],
     },
