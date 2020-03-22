@@ -6,6 +6,8 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 
+import mongoDBUpload
+
 # Set headers
 headers = requests.utils.default_headers()
 headers.update(
@@ -49,6 +51,8 @@ iso_utc = utc_date.strftime("%Y%m%dT%H%M%SZ")
 
 meta["unix_timestmap"] = unix_utc
 meta["iso_timestamp"] = iso_utc
+
+mongoDBUpload.insertData(states, meta)
 
 result["meta"] = meta
 result["states"] = states
