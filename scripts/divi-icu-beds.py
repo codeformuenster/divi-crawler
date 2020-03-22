@@ -52,7 +52,10 @@ iso_utc = utc_date.strftime("%Y%m%dT%H%M%SZ")
 meta["unix_timestmap"] = unix_utc
 meta["iso_timestamp"] = iso_utc
 
-mongoDBUpload.insertData(states, meta)
+try:
+    mongoDBUpload.insertData(states, meta)
+except:
+    pass
 
 result["meta"] = meta
 result["states"] = states

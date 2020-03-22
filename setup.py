@@ -11,7 +11,7 @@ setup(
     packages=find_packages(),
     scripts=glob("scripts/*"),
     # dependencies
-    install_requires=["bs4", "requests"],
+    install_requires=["bs4", "requests", "pymongo"],
     extras_require={
         "dev": ["black", "pylama", "rope"],
     },
