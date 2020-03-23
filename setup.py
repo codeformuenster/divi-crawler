@@ -1,5 +1,5 @@
 from glob import glob
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="divi-crawler",
@@ -8,7 +8,7 @@ setup(
     url="https://github.com/codeformuenster/divi-crawler",
     license="MIT",
     # source
-    packages=find_packages(),
+    packages=["divi"],
     scripts=glob("scripts/*.py"),
     # dependencies
     install_requires=["bs4", "requests", "pymongo"],
