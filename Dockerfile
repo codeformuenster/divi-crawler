@@ -8,6 +8,7 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt /usr/src/app/requirements.txt
 COPY setup.py /usr/src/app/setup.py
+COPY divi /usr/src/app/divi
 
 RUN pip install --no-cache-dir -r requirements.txt && \
     rm -rf /var/lib/apt/lists/*
