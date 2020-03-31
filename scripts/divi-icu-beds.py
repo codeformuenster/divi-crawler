@@ -2,10 +2,10 @@
 
 from divi import io, mongodb_upload, scraper
 
-URL = "https://www.divi.de/images/register/report2v.html"
+URL = "https://diviexchange.z6.web.core.windows.net/report.html"
 
 # get script data from data source
-script_tag = scraper.scrape_script_tag(URL)
+script_tag = scraper.scrape_html_body(URL)
 # extract ICU report from script tag
 icu_report = scraper.extract_icu_report(script_tag)
 # extract relevant data from ICU report

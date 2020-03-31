@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def scrape_script_tag(url: str) -> str:
+def scrape_html_body(url: str) -> str:
     """ Scrape script tag """
     headers = requests.utils.default_headers()
     header_user_agent = (
@@ -15,25 +15,26 @@ def scrape_script_tag(url: str) -> str:
     )
     headers.update({"User-Agent": header_user_agent})
     req = requests.get(url, headers)
-    script_tag = BeautifulSoup(req.content, "html.parser").body.script
-    return str(script_tag)
+    body = BeautifulSoup(req.content, "html.parser").body
+    return str(body)
 
 
-def extract_icu_report(script_tag: str) -> dict:
+def extract_icu_report(body: str) -> dict:
     """ extract icu report """
-    start_string = '{"config"'
-    end_string = "]}}"
-    result = re.search(f"({start_string}(.*){end_string})", script_tag).group(1)
+    start_string = r'vegaEmbed\("#right", '
+    end_string = r', {"renderer": "canvas", "actions": false}\);'
+    result = re.search(f'{start_string}(.*){end_string}', str(body)).group(1)
     icu_report = json.loads(result)
     return icu_report
 
 
 def fields_from_report(icu_report) -> (str, str, str, dict):
     """ parse report to dict """
-    status = icu_report["vconcat"][0]["layer"][0]["title"]["subtitle"][0]
-    source = icu_report["vconcat"][0]["layer"][0]["title"]["subtitle"][1]
-    dataset = list(icu_report["datasets"].keys())[0]
-    states = icu_report["datasets"][dataset]
+    status = icu_report["layer"][0]["title"]["subtitle"][0]
+    source = icu_report["layer"][0]["title"]["subtitle"][1]
+    # get dataset
+    dataset_key = list(icu_report["datasets"].keys())[0]
+    states = icu_report["datasets"][dataset_key]
     for state in states:
         del state["geometry"]
-    return status, source, dataset, states
+    return status, source, dataset_key, states
