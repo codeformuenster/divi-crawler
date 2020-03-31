@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="divi-crawler",
-    version="0.1.0",
+    version="0.1.1",
     author="CodeForMuenster",
     url="https://github.com/codeformuenster/divi-crawler",
     license="MIT",
