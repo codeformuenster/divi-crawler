@@ -1,5 +1,7 @@
 # divi-crawler
 
+**DEPRECATED, see https://github.com/codeformuenster/divi-map for latest data.**
+
 Web crawler for data at divi.de
 (Deutsche interdisziplinäre Vereinigung fir Intensiv- und Notfallmedizin).
 
